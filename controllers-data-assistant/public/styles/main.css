@@ -1,0 +1,258 @@
+/* ///Main CSS - Controller's Data Assistant/// */ 
+
+/* TYPE DEFENITION FOR LINKING PAGE STYLE */
+<style type = "text/css"> 
+
+/* TEXT STYLING TO ALLOW FOR PARAGRAPHS --- REVIEW THIS */
+.centerImage {
+	text-align:center; 
+	display:block;
+}
+
+/* LINK STYLING / REGULAR */
+a  { 
+    text-decoration: none; color: #000; 
+}
+
+/* LINK STYLE / HOVERING */
+a:hover {
+    text-decoration: none; color: #000; text-decoration: underline;
+}
+
+
+/* WEBPAGE BACKGROUND COLOUR */ 
+body {
+    background-color: antiquewhite;
+    background-image: linear-gradient(
+        to top, transparent, antiquewhite
+    ), url("images/jack-atkinson-unsplash.jpg");
+    background-repeat: no-repeat;
+}
+
+/* DOWNLOADED FONTS */ 
+@font-face {
+    font-family: "Lato", sans-serif;
+    src: url("/fonts/Lato/Lato-Bold.ttf")
+}
+
+@font-face {
+    font-family: "Lato", sans-serif;
+    src: url("/fonts/Lato/Lato-black.ttf")
+}
+
+@font-face {
+    font-family: "Lato", san-serif;
+    src: url("/fonts/Lato/Lato-LightItalic.ttf")
+}
+
+@font-face {
+    font-family: "Merriweather", san-serif;
+    src: url("/fonts/Merriweather/Merriweather-Regular.tff")
+}
+
+/* WEBSITE LOG IN TITLE - 'CONTROLLER'S DATA ASSISTANT' */
+h1 {
+    font-family: "Lato", sans-serif; font: Lato-Bold;
+    font-size: 150px;
+    text-align: center;
+} 
+
+/* WEBSITE LOG IN FONT - AND OTHERS */
+h2 {
+    font-family: "Lato", sans-serif; font: Lato-Black;
+    font-size: 80px;
+    text-align: center;
+}
+
+/* CONTROLLER'S DATA ASSISTANT TOP-NAVBAR STYLING FOR COMPANY LOGO */
+h3 {
+    font-family: "Lato", sans-serif; font: Lato-Black;
+    font-size: 50px;
+    text-align: center;
+    font: bold;
+}
+
+/* LOG IN PAGE SUBHEADER */
+h4 {
+    font-family: "Lato", sans-serif; font: Lato-LightItalic;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Body text for information such as emails*/
+p1 {
+    font-family: "Lato", sans-serif; font: Lato-Black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* Page headers - 'request from', 'category', 'action', 'data from' etc */
+p2 {
+    font-family: "Lato", sans-serif; font: Lato-Black;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* LOG IN BOXES STYLING */
+/* LABEL REPRESENTS TEXT FOR LOG IN BOXES */
+label {
+    display: block;
+    font-family: "Lato", sans-serif; font: Lato-Black;
+    text-align: center;
+    align-content: center;
+}
+
+p3 {
+    font-family: "Merriweather", sans-serif; font: Merriweather-Regular;
+    font-size: 18px;
+    text-align: center;
+    
+}
+/* LOG IN SUBMIT BUTTON */
+input [type='submit'], 
+label {
+    margin-top: 1rem;
+    align-items: center;
+}
+
+/* Fixed-Navbar Style NOT SURE THIS WORKS */
+/*<nav class="navbar navbar-expand-lg bg-dark navbar-dark static-top">*/
+<nav class="navbar navbar-expand-lg bg-success navbar-dark static-top"> {
+    background-color: #22BF71 !important;  
+} */
+
+/*fixed-top navbar*/
+.container-fluid {
+    background-color: #22BF71;
+} 
+
+/* is main from sidebar? not sure this works NEEDS TESTING */ 
+.main {
+    
+    border-top: 10;
+}
+
+/* SIDEBAR */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 240px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 5; /* Fixed to stay under nav bar */
+    top: 10; /* Fixed to stay under nav bar */
+    left: 10; /* Fixed to stay under nav bar */
+    background-color: #22BF71; /* Light green CHANGE TO MATCH NAV BAR? */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/*#34EBA8*/
+
+/* SIDE BAR NAVIGATION MENU LINKS */
+.sidenav a {
+    padding: 7px 10px 7px 18px; /* Padding text within side bar */
+    text-decoration: none; /* play around with this */
+    font-size: 25px; /* play around with different sizes */
+    font-family: "Lato", sans-serif; font: Lato-Black; 
+    /*color: black;*/
+    display: block;
+    font-weight: bold;
+    
+}
+
+/* request and flagged notifications box */
+#notification {
+    
+    position: absolute;
+    right: 20px;
+    color: black;
+    text-align: center;
+    background-color: #FFB8FB;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    
+}
+
+/* HOVERING STATUS CHANGES LINK TEXT COLOUR TO WHITE */
+.sidenav a:hover {
+    /*color: #f1f1f1;*/
+    font-weight: bold;
+    color: #FFB8FB;
+    background-color: #66C3F2;
+    /*opacity: 0.5; */
+    padding: 10px;
+    border-radius: 18px;
+    height: 50px;
+}
+
+.sidenav a:active {
+    font-weight: bold;
+    color: mediumvioletred;
+}
+
+/* MAIN PAGE CONTENT - SAME WIDTH AS SIDEBAR SO NO COLLISIONS */
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+}
+
+/* RE-WRITE THIS On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*NOTIFICATION BOXES FOR SIDE-NAV */
+
+#notif-box {
+    /*background-color: cornflowerblue;
+    padding: 10px;
+    border-radius: 18px;
+    height: 50px;*/
+    text-decoration-color:  mediumvioletred;
+    font-weight: bold;
+    
+}
+
+/* Flexible rectangle for viewing information on all pages */ 
+.flex-info-box {
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+}
+
+/* Flexible action for when data fills up box */
+.flex-info-box:before {
+    content: "";
+    display: block;
+    /*padding-top: 2%;*/
+}
+
+/*Box for different categorisations of requests*/
+.cat-box {
+    /*width: 60%;*/
+    width: 80px;
+    background: white;
+    border-radius: 15px;
+}
+
+/*Box for begin request review, should be a different colour and a responsive button*/
+
+.review-box {
+    /*width: 80%;*/
+    width: 80px;
+    background-color: #22BF71;
+    border-radius: 15px;
+}
+
+/*image sourced from Unsplash courtesy of jack atkinson for decorative purposes */
+.background-image {
+    background: src(/images/jack-atkinson-unsplash.jpg) 50% 50%;
+    width: 100%;
+    /*overflow: hidden;
+    height: auto; */
+} 
+

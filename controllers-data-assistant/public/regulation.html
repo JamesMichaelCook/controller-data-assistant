@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        
+        <!-- Character set and content definition -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap style link -->
+        <!-- includes javascript links for a randomised GDPR fact on homepage -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+        <!--<script type = "text/javascript" src="scripts/main.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        
+        <!-- CSS style link -->
+        <link rel="stylesheet" href="styles/main.css">
+        
+        <!-- Title of tab to change with each new page where relevant -->
+        <title>CDA / Regulations</title>
+        
+        <!-- Lato Font import if localisation doesn't work -->
+        <style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap'); </style>
+        <script type = "text/javascript" src="scripts/main.js"></script>
+     </head>
+    
+<body>
+    
+    <!-- Fixed top navigation bar with Company Logo, sign out options and dynamic-user identification -->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html" title="Back to Home"><h3>Controller's Data Assistant</h3></a>
+            </div>
+            <div class="col-sm-4" style="center">
+                <h3><b>Regulation Guide</b></h3>
+            </div>
+            <ul class="nav navbar-nav">
+                <!-- Change these fonts later --> 
+                <li class="nav-item"><a class="nav-link" href="profile.html">USER</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html"><h4>Log Out</h4></a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Side bar navigation with breaks to position links as desired -->
+    <div class="sidenav">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="requests.html">Requests <i id= 'notification'> <p2>8</p2></i></a>
+        <a href="flagged.html">Flagged<i id= 'notification'> <p2>2</p2> </i></a>
+        <br>
+        <a href="datastore.html">Data Store</a>
+        <div id="notif-box">
+        <a href="regulation.html">Regulation Guide</a>
+        </div>
+    </div>
+    
+    <!-- Main page content that will change with each unique page -->
+    <div class="main" style="margin-top:100px">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-7"> 
+                <p2>Regulations:</p2>
+                <br>
+                <br>
+                <div class="flex-info-box" style="height: 600px; overflow: scroll; overflow-y: scroll; overflow-x: hidden;">
+                <p3> 
+                    Temporary info taken from:
+                    <br>
+                    <br>
+                    "https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/"
+                    <br>
+                    <br>
+                    Who does the UK GDPR apply to?
+                    <br>
+                    <br>
+                    The UK GDPR applies to ‘controllers’ and ‘processors’. 
+                    <br>
+                    <br>
+                    A controller determines the purposes and means of processing personal data.
+                    <br>
+                    <br>
+                    A processor is responsible for processing personal data on behalf of a controller.
+                    <br>
+                    <br>
+                    If you are a processor, the UK GDPR places specific legal obligations on you; for example, you are required to maintain records of personal data and processing activities. You will have legal liability if you are responsible for a breach.
+                    <br>
+                    <br>
+                    However, if you are a controller, you are not relieved of your obligations where a processor is involved – the UK GDPR places further obligations on you to ensure your contracts with processors comply with the UK GDPR.
+                    <br>
+                    <br>
+                    The UK GDPR applies to processing carried out by organisations operating within the UK. It also applies to organisations outside the UK that offer goods or services to individuals in the UK.
+                    <br>
+                    <br>
+                    The UK GDPR does not apply to certain activities including processing covered by the Law Enforcement Directive, processing for national security purposes and processing carried out by individuals purely for personal/household activities.
+                    <br>
+                    <br>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p3>
+                
+                </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer to be changed -->
+    <footer class="fixed-bottom"> 
+        <center>
+        <p>This website is the work of James Cook</p>
+        <p><a href="mailto:jcook001@gold.ac.uk">jcook001@gold.ac.uk</a></p>
+        </center>
+    </footer>
+    
+    </body>
+
+</html>
